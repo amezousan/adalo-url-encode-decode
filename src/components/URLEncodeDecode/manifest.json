@@ -1,0 +1,122 @@
+{
+  "displayName": "URL Encode Decode",
+  "defaultWidth": 160,
+  "defaultHeight": 38,
+  "resizeX": true,
+  "resizeY": true,
+  "components": "./index.js",
+  "icon": "./thumbnail.png",
+  "props": [
+    {
+      "name": "selectEncodeOrDecode",
+      "displayName": "Select either Encode or Decode text",
+      "helpText": "This is URL Encode/Decode: https://en.wikipedia.org/wiki/Percent-encoding",
+      "type": "text",
+      "default": "encode",
+      "control": {
+        "type": "menu",
+        "options": [
+          { "label": "Encode", "value": "encode" },
+          { "label": "Decode", "value": "decode" }
+        ]
+      }
+    },
+    {
+      "name": "targetText",
+      "displayName": "Your target text",
+      "helpText": "Input what you want to encode/decode.",
+      "type": "text",
+      "default": "This is an example"
+    },
+    {
+      "name": "clickActions",
+      "displayName": "Click Actions",
+      "helpText": "The actions will be triggered when this component is clicked.",
+      "type": "action",
+      "arguments": [
+        {
+          "type": "text",
+          "displayName": "Target Text"
+        }
+      ]
+    }
+  ],
+  "childComponents": [
+    {
+      "name": "buttonStyles",
+      "displayName": "Style Options",
+      "helpText": "You can customize font color, size and background",
+      "props": [
+        {
+          "name": "iconText",
+          "displayName": "Text",
+          "type": "text",
+          "default": "Button"
+        },
+        {
+          "name": "iconName",
+          "displayName": "Icon",
+          "type": "icon",
+          "default": "add"
+        },
+        {
+          "name": "iconSize",
+          "displayName": "Icon Size",
+          "type": "number",
+          "default": 24,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 60
+          }
+        },
+        {
+          "name": "textSize",
+          "displayName": "Text Size",
+          "type": "number",
+          "default": 13,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 60
+          }
+        },
+        {
+          "name": "primaryColor",
+          "displayName": "Primary Color",
+          "type": "color",
+          "default": "@primary"
+        },
+        {
+          "name": "textColor",
+          "displayName": "Text Color",
+          "type": "color",
+          "default": "@contrast:primaryColor"
+        },
+        {
+          "name": "borderRadius",
+          "displayName": "Rounding",
+          "type": "number",
+          "default": 4,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 18
+          }
+        },
+        {
+          "name": "enableShadow",
+          "displayName": "Shadow",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "name": "enableUppercase",
+          "displayName": "Uppercase",
+          "type": "boolean",
+          "default": true
+        }
+      ]
+    }
+  ]
+}

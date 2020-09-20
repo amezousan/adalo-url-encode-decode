@@ -1,0 +1,36 @@
+{
+  "name": "url-encode-decode",
+  "description": "Encode or decode a text to/from URL encoded (also known as Percent-encoded) format.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "amezousan",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish",
+    "prettier": "prettier --write *.js \"src/**/*.js\""
+  },
+  "adalo": {
+    "logo": "./logo.png",
+    "displayName": "URL Encode Decode",
+    "components": [
+      {
+        "name": "URLEncodeDecode",
+        "manifest": "./src/components/URLEncodeDecode/manifest.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.40",
+    "prettier": "^2.1.2",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5"
+  },
+  "dependencies": {
+    "@protonapp/react-native-material-ui": "^2.0.4",
+    "react-native-vector-icons": "^7.1.0"
+  }
+}
