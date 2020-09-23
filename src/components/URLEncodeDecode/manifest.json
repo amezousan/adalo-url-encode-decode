@@ -23,7 +23,7 @@
     },
     {
       "name": "targetText",
-      "displayName": "Your target text",
+      "displayName": "Encode/Decode Text",
       "helpText": "Input what you want to encode/decode.",
       "type": "text",
       "default": "This is an example"
@@ -36,7 +36,7 @@
       "arguments": [
         {
           "type": "text",
-          "displayName": "Target Text"
+          "displayName": "Encoded or Decoded Text"
         }
       ]
     }
