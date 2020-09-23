@@ -1,7 +1,7 @@
 {
   "name": "url-encode-decode",
   "description": "Encode or decode a text to/from URL encoded (also known as Percent-encoded) format.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "author": "amezousan",
